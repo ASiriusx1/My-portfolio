@@ -32,7 +32,7 @@ body{
 }
 
 #menu{
-    font-size: 3,5rem;
+    font-size: 3.5rem;
     color: white;
     display: none;
 }
@@ -496,4 +496,5 @@ form{
     form{
         flex-direction: column;
     }
+
 }
