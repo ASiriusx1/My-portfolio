@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins';
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 60%;
+}
+
+body{
+    background: black;
+    color:white ;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 15%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#menu{
+    font-size: 3,5rem;
+    color: white;
+    display: none;
+}
+
+.logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+span{
+    background: linear-gradient(270deg,  rgb(7, 206, 241) 10%,  rgb(4, 43, 114) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3 ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover{
+    color: rgb(14, 70, 175);
+    border-bottom: 3px solid rgb(4, 43, 114);
+    transition: 0.1s ease-in-out;
+}
+
+.gbtn{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(270deg,  rgb(7, 206, 241) 10%,  rgb(4, 43, 114) 100%);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.gbtn:hover{
+    transform: scale(1.05);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 15%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.hcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.hcontent h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    line-height: 1;
+}
+
+.hcontent h3{
+    margin: 1rem o;
+    font-size: 4rem;
+}
+
+.hcontent p{
+    font-size: 1.5rem;
+     font-weight: 500;
+    line-height: 1.8;
+}
+
+.himage img{
+    width: 28vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px  rgb(4, 43, 114);
+    transition: 0.4s ease-in-out;
+}
+
+.himage img:hover{
+    box-shadow: 0 0 25px  rgb(4, 43, 114),
+                0 0 50px  rgb(4, 43, 114),
+                0 0 100px   rgb(4, 43, 114);
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid rgb(4, 43, 114);
+    border-radius: 50%;
+    color: white;
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.social a:hover{
+    color: white;
+    background-color: rgb(4, 43, 114);
+    transform: scale(1.2)translateY(-5px);
+    box-shadow: 0 0 25px  rgb(4, 43, 114);
+}
+
+.btns{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color:  rgb(4, 43, 114);
+    box-shadow: 0 0 25px  rgb(4, 43, 114);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    color: black;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px  rgb(4, 43, 114),
+                0 0 50px  rgb(4, 43, 114),
+                0 0 100px   rgb(4, 43, 114);
+}
+
+.btn:nth-child(2){
+    background-color: black;
+    color: rgb(4, 43, 114);
+    border: 2px solid rgb(4, 43, 114);
+    box-shadow: 0 0 25px transparent;
+}
+
+.btn:nth-child(2):hover{
+     background-color:  rgb(4, 43, 114);
+    box-shadow: 0 0 25px  rgb(4, 43, 114);
+    color: black;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: rgb(14, 13, 13);
+}
+
+.aimage img{
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px  rgb(4, 43, 114);
+    transition: 0.4s ease-in-out;
+}
+
+.aimage img:hover{
+    box-shadow: 0 0 25px  rgb(4, 43, 114),
+                0 0 50px  rgb(4, 43, 114),
+                0 0 100px  rgb(4, 43, 114);
+}
+
+.acontent h2{
+    font-size: 7rem;
+    text-align: left;
+}
+
+.acontent p{
+   font-size: 1.8rem;
+}
+
+.acontent .btn{
+   margin: 5rem 0;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(4, 43, 114);
+}
+
+::-webkit-scrollbar-track{
+    background-color:  rgb(14, 13, 13);
+}
+
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+
+.services{
+    color: black;
+}
+
+.services h2{
+    color: white;
+}
+
+.scontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.sbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-radius: 3rem;
+    cursor: pointer;
+     border: 5px solid transparent;
+    background-color: rgb(4, 43, 114);
+    transition: 0.4s ease-in-out;
+}
+
+.sbox:hover{
+     color: rgb(4, 43, 114);
+     transform: scale(1.03);
+     background: rgb(14, 13, 13);      
+     border: 5px solid rgb(4, 43, 114);     
+}
+
+.sinfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.sinfo h4{
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+
+.sinfo p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.sinfo i{
+    font-size: 3rem;
+    margin: 0 2rem;
+}
+
+.projects{
+    background: rgb(14, 13, 13);
+}
+
+.pbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    gap: 15rem;
+    row-gap: 5rem;
+}
+
+.pcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    border: 2px solid rgb(4, 43, 114);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px  rgb(4, 43, 114);  
+    transition: 0.3 ease; 
+}
+
+.pcard:hover{
+    box-shadow: 0 0 25px  rgb(4, 43, 114),
+                0 0 50px  rgb(4, 43, 114);
+    transform: scale(1.03);            
+}
+
+.pcard img{
+    max-width: 300px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.pcard h3{
+    font-size: 3rem;
+}
+
+.pcard p{
+    font-size: 1.6rem;
+}
+
+.contact{
+    background: black;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.ibox input{
+     width: 100%;
+    padding: 2.5rem;
+    border: 2px solid rgb(4, 43, 114);
+    border-radius: 2rem;
+    background: black;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    resize: none;
+}
+
+.input2 textarea{
+    width: 100%;
+    padding: 2.5rem;
+    border: 2px solid rgb(4, 43, 114);
+    border-radius: 2rem;
+    background: black;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    resize: none;
+}
+
+.footer{
+    background: rgb(14, 13, 13);
+    padding: 50px o;
+}
+
+.footer .social{
+    text-align: center;
+}
+
+.footer ul{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer ul li a{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid rgb(4, 43, 114);
+}
+
+.footer .copyright{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+@media (max-width:1285px) {
+    #menu{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius: 2rem;
+        border-left: rgb(4, 43, 114);
+        border-bottom: 2px solid rgb(4, 43, 114);
+        display: none;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+
+    }
+
+    .navbar a:hover{
+        border-bottom: 2px solid rgb(4, 43, 114);;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .gbtn{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+
+    .hcontent{
+        align-items: center;
+        text-align: center;
+    }
+
+    .himage img{
+        width: 56vw;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about h2{
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .aimage img{
+        width: 56vw;
+    }
+
+    form{
+        flex-direction: column;
+    }
+}
