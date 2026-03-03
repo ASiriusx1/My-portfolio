@@ -7,6 +7,10 @@
     font-family: 'poppins';
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html{
     overflow-x: hidden;
     font-size: 60%;
@@ -497,4 +501,5 @@ form{
     }
 
 }
+
 
